@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <!-- rowspan, colspan을 이용해서 행, 열 합치기 -->
+
+    <table border="1">
+        <caption>선물용과 가정용 상품 구성</caption>
+        <thead>
+            <tr>
+                <th>용도</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <!-- 2개의 행이 합쳐진다. -->
+                <td rowspan = "2">선물용</td> 
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+
+            <tr>
+                <!-- 2개의 행이 합쳐진다. -->
+                <td rowspan = "2">가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+            <tr>
+                <td>5kg</td>
+                <td>18~26과</td>
+                <td>52,000원</td>
+            </tr>
+        </tbody>
+
+    </table>
+
+    <table border="1">
+
+        <caption>rowspan, colspan 활용</caption>
+
+        <thead>
+            <tr>
+                <!-- 2개의 행이 합쳐진다. 같은 thead 블럭 안에 있어야 가능함 -->
+                <td rowspan = "2">1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>8</td>
+                <td>9</td>
+                <td>10</td>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <!-- 3개의 열이 합쳐진다. 같은 tbody 블럭 안에 있어야 가능함 -->
+                <td>11</td>
+                <td colspan="3">12</td>
+                <td>15</td>
+            </tr>
+
+            <tr>
+                <td>16</td>
+                <td>17</td>
+                <td>18</td>
+                <td>19</td>
+                <td>20</td>
+            </tr>
+        </tbody>
+    </table>
+
+</body>
+</html>
