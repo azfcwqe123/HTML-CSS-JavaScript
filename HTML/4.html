@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- 표를 만드는 <table>, <caption> 태그 -->
+    <!-- tr(table row), th(table header), td(table data) -->
+    
+    <h2>상품 구성</h2>
+
+    <!-- border = "1"은 표를 시각적으로 보이게 함 -->
+     
+    <table border="1">
+        <!-- caption -> 표의 중앙 위쪽에 제목 생성 -->
+        <caption>선물용과 가정용 상품 구성</caption> 
+        
+        <!-- thead, tbody로 단락을 구성함으로써, CSS 사용할때 용이. 표의 구조는 웹브라우저에서는 보이지 않음-->
+        <thead>
+            <tr>
+                <th>용량</th>
+                <th>중량</th>
+                <th>개수</th>
+                <th>가격</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr>
+                <td>선물용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>35,000원</td>
+            </tr>
+
+            <tr>
+                <td>가정용</td>
+                <td>3kg</td>
+                <td>11~16과</td>
+                <td>30,000원</td>
+            </tr>
+        </tbody>
+        
+    </table>
+
+</body>
+</html>
