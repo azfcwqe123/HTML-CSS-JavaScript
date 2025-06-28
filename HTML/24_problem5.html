@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+
+    <!-- 목록 기호 제거 -->
+    <style>
+    ul {
+        list-style-type: none;
+        padding-left: 0;
+    }
+    </style>
+
+</head>
+<body>
+    
+    <h1>오렌지 농장 근무 지원서</h1>
+    <p>오렌지 수확, 선별, 포장 등의 업무를 성실하게 수행하실 분을 모집합니다.</p>
+    
+    <hr>
+
+    <!-- <form action="/submit" method="post"> : 실제 제출 처리하려면 이와 같은 형식으로 해야함. -->
+    <form>
+        <fieldset>
+            <b>개인정보</b>
+                <ul>
+                    <li>
+                        <label for="name">이름</label>
+                        <input type ="text" id="name">
+                    </li>
+                    <li>
+                        <label for="tel">연락처</label>
+                        <input type="tel" id="tel">
+                    </li>
+                </ul>
+            <b>희망 업무</b>
+            <ul>
+                <li>
+                    <input type="radio" name="check" id="check1">
+                    <label for="check1">오렌지 수확</label>
+                </li>
+                <li>
+                    <input type="radio" name="check" id="check2">
+                    <label for="check2">오렌지 선별 및 포장</label>
+                </li>
+                <li>
+                    <input type="radio" name="check" id="check3">
+                    <label for="check3">농장 정비 및 관리</label>
+                </li>
+            </ul>
+
+            <b>지원 동기</b><br>
+            
+            <!-- name은 서버로 데이터를 보내기 위한 속성 -->
+            <textarea name = "motivation" cols="40" rows="4" placeholder="오렌지 농장에서 일하고 싶은 이유를 작성해주세요."></textarea>
+        </fieldset>
+        <button type="submit">접수하기</button>
+        <button type="reset">다시 쓰기</button>
+    </form>
+
+</body>
+</html>

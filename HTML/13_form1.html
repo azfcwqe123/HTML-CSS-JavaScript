@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <fieldset>, <legend> : 폼 요소를 그룹으로 묶는다. legend은 그룹의 제목을 뜻함. -->
+    <form action="" autocomplete="off">
+        <fieldset>
+            <legend>ID</legend>
+            <p>Hello!</p>
+            <p>Hello!!</p>
+        </fieldset>
+
+        <fieldset>
+            <legend>PassWord</legend>
+
+            <table border="1">
+                <tr>
+                    <td>1</td>
+                    <td>2</td>
+                    <td>3</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>5</td>
+                    <td>6</td>
+                </tr>
+            </table>
+        </fieldset>
+    </form>
+
+    <!-- label은, 입력란 가까이에 붙여놓은 설명을 위한 텍스트 -->
+    <!-- 1. label 태그 안에 input 태그 넣기-->
+    <label>ID1<input type="text"></label>
+
+    <!-- 2. label 태그 뒤에 input 태그 이어 붙이기. for = "user-id"와 id = "user-id"을 통해 서로 연결한다. -->
+    <label for = "user-id">ID2</label><input type="text" id ="user-id">
+
+</body>
+</html>

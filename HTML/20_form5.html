@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul id="shipping">
+                <li>
+                    <!-- for와 id의 관계는 HTML에서 <label>과 <input>을 연결하는 아주 중요한 메커니즘 -->
+                    <!-- 예를 들어, 주문 상품이란 글자를 클릭하면 id="prod"인 input으로 커서가 이동 -->
+                    <label for="prod">주문 상품</label>
+                    <input type="text" id="prod" value="오렌지 10KG" readOnly>
+                </li>
+                <li>
+                    <!-- required은 반드시 작성해야하는 목록. autofocus은 입력폼이 생기자마자 해당 칸에 커서를 둔다. -->
+                    <label for="addr">배송 주소</label>
+                    <input type="text" id="addr" autrofocus required>
+                </li>
+                <li>
+                    <label for="mail">이메일</label>
+                    <input type="email" id="mail">
+                </li>
+                <li>
+                    <!-- placeholder는 입력란에 적당한 힌트를 표시 -->
+                    <label for="phone">연락처</label>
+                    <input type="tel" id="phone" placeholder="하이픈 빼고 입력" required>
+                </li>
+                <li>
+                    <label for="d-day">배송 지정</label>
+                    <input type="date" id="d-day"> <small>(주문일로부터 최소 3일 이후)</small>
+                </li>
+            </ul>
+        </fieldset>
+
+        <fieldset>
+            <legend>이벤트와 새로운 소식</legend>
+            <input type="radio" name="mailing" id="mailing_y">
+            <label for="mailing_y">메일 수신</label>
+            <!-- checked는 라디오 버튼 2개 중, 하나를 디폴트값으로 만듦 -->
+            <input type="radio" name="mailing" id="mailing_n" checked>
+            <label for="mailing_n">메일 수신 안 함</label>
+        </fieldset>
+        <div>
+            <input type="submit" value="주문하기">
+            <input type="reset" value="취소하기">
+        </div>
+    </form>
+    
+    <br>
+    
+    <!-- textarea을 통해 여러 줄 입력하는 테스트 영역을 만들 수 있음. -->
+    <form>
+        <fieldset>
+            <legend>메모</legend>
+            <textarea id="memo" cols="40" rows="4"></textarea>
+            <input type="submit" value="제출">
+        </fieldset>
+    </form>
+</body>
+</html>

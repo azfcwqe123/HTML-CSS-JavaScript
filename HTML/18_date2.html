@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <form>
+        <fieldset>
+            <legend>배송 정보</legend>
+            <ul>
+                <li>
+                    <label>이름 <input type="text" id="user_id" size="10"></label>
+                    <input type="submit" value="Check">
+                </li>
+                <li>
+                    <label>배송 주소 <input type="text" id="deliver_id" size="30"></label>
+                    <input type="submit" value="Check">
+                </li>
+                <li>
+                    <label>이메일 <input type="email" id="email_id" size="30"></label>
+                    <input type="submit" value="Check">
+                </li>
+                <li>
+                    배송 지정 (주문일로부터 최소 3일 이후)<br>
+                    <input type="date">
+                </li>
+            </ul>
+        </fieldset>
+        <button type="submit">주문하기</button>
+        <button type="reset">취소하기</button>
+    </form>
+</body>
+</html>

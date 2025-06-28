@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- value="a" → 사용자가 이 체크박스를 선택하면, "a"라는 값이 서버에 전송됨. name과 같이 쓰여야 서버로 넘어감. -->
+    <!-- name : 키, value : 값. 해시맵 형태의 데이터 느낌 -->
+    <form>
+    <fieldset>
+        <legend>알파벳 선택</legend>
+        <p>선택하세요</p>
+        <label><input type="checkbox" name="alpha" value="a"> A</label>
+        <label><input type="checkbox" name="alpha" value="b"> B</label>
+        <label><input type="checkbox" name="alpha" value="c"> C</label>
+        <label><input type="checkbox" name="alpha" value="d"> D</label>
+
+        <p><b>숫자 선택</b></p>
+        <label><input type="radio" name="number" value="yes"> 1</label>
+        <label><input type="radio" name="number" value="no"> 2</label>
+    </fieldset>
+    <button type="submit">제출</button>
+    </form>
+    <!-- 라디오 버튼에서 하만 선택할 수 있게 하려면, 모든 라디오 버튼을 똑같은 name값으로 하면 됨. -->
+
+</body>
+</html>
