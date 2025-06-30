@@ -1,0 +1,22 @@
+.container {
+    /* 가로 */
+    width: 500px;
+
+    /* 내부 너비 */
+    padding: 10px;
+
+    /* 표 테두리 */
+    border: 10px solid #ccc;
+}
+
+b {
+    font-weight: 700;
+    font-size:larger;
+    line-height: 2;
+    color:blueviolet
+}
+
+li {
+    /* 불릿 없애기 */
+    list-style-type: none;
+}

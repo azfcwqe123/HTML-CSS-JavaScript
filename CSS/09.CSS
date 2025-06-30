@@ -1,0 +1,18 @@
+/* 첫글자를 대문자로 */
+.trans1 {text-transform: capitalize;}
+
+/* 전체 글자를 대문자로 */
+.trans2 {text-transform: uppercase;}
+
+/* 전체 글자를 소문자로 */
+.trans3 {text-transform: lowercase;}
+
+/* 자간 0.2em */
+.spacing1 {
+    letter-spacing: 0.2em;
+}
+
+/* 자간 0.5em */
+.spacing2 {
+    letter-spacing: 0.5em;
+}

@@ -1,0 +1,12 @@
+table {
+    caption-side: bottom;
+    border: 1px solid black;
+    /* collapse는 두 줄로 그냥 둘 것인지, 합쳐서 하나로 결정할것인지 정함. */
+    border-collapse: collapse;
+}
+
+td, th {
+    border: 1px dotted black;
+    padding: 10px;
+    text-align: center;
+}

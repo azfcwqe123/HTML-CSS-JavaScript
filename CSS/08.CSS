@@ -1,0 +1,14 @@
+.shadow1 {
+    color:red;
+    text-shadow: 1px 1px black;
+}
+
+.shadow2 {
+    /* 가로, 세로, 번짐 정도, 색상 */
+    text-shadow: 5px 5px 3px #26990f;
+}
+
+.shadow3 {
+    color: #ce9b0f;
+    text-shadow: 7px -7px 20px #000;
+}
