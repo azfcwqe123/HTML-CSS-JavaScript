@@ -1,0 +1,9 @@
+/* https://fonts.google.com/에서 가져옴 */
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&display=swap');
+
+h1 {
+    font-size: 60px;
+    font-weight: bold;
+    /* 만약 'Nanum Pen Script' 폰트를 불러오지 못할 경우, 브라우저는 운영체제(OS) 기본의 필기체 계열(cursive) 폰트를 대신 사용하게 된다. */
+    font-family: 'Nanum Pen Script', cursive
+}

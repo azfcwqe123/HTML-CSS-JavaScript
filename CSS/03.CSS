@@ -10,6 +10,7 @@ h1 {
 }
 
 .accent {
+    /* font-weight: 글자 두께 */
     font-weight: bold;
     color:red;
 }

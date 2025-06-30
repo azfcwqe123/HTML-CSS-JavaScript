@@ -1,0 +1,21 @@
+h1 {
+    /* 16진수 표기법 */
+    color: #00ff00 
+}
+
+/* rgb 표기법 */
+h2 { color: rgb(0, 0, 255); }
+
+/* rgba 표기법 -> a는 불투명도. 1은 완전히 불투명 0은 투명 */
+h3 { color: rgba(0, 0, 255, 0.5); }
+
+p {
+    /* 색상 이름 표기법 */
+    color: goldenrod;
+}
+
+.accent {
+    /* hsl 표기법 -> hue(색상), saturation(채도), lightness(명도) */
+    color: hsl(0, 100%, 50%);
+    font-weight: bold;
+}
