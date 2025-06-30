@@ -1,0 +1,13 @@
+.accent {
+    text-align: center;
+    border: 5px solid #990;
+    padding: 10px;
+}
+
+.bg {
+    background-color: chocolate;
+}
+
+p {
+    color:blue
+}
