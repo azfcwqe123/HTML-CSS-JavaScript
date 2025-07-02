@@ -8,6 +8,7 @@
     background-color: chocolate;
 }
 
+/* 모든 p 태그에 대해서 파란색 글자 적용 */
 p {
     color:blue
 }

@@ -4,6 +4,7 @@
 }
 
 h1 {
+    /* inline-block : 옆으로 줄줄이 나열됨(w, h 설정 가능). block만 있다면 한 줄 전체를 차지하게됨. */
     display: inline-block;
     background-color: aquamarine;
     color:black
