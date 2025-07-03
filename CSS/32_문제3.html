@@ -19,14 +19,20 @@
 
         ul {list-style: none;}
 
+        /* display: block을 쓰고 있음에도 불구하고 나란히 있는 이유는, 플로팅을 했기 때문 */
         li {float:left;}
 
         a {
             /* a 태그에 display: block;을 주면 → 한 줄 전체 차지하면서 줄바꿈이 가능한 블록 요소처럼 행동. 중요! */
+            /* block을 설정함으로써, 블럭이 클릭 영역이 되고 박스 스타일을 준다. */
             display: block;
             padding: 10px;
             background-color: #ccc;
         }
+
+        /* block : 한 줄 전체 차지 */
+        /* inline : 한 줄 안에 다른 요소들과 함께 배치(줄바꿈X, width, height 안 됨) */
+        /* inline-block: 한 줄 안에 나란히 있지만, width, height, 마진, 패딩 모두 적용 가능 */
 
     </style>
 </head>

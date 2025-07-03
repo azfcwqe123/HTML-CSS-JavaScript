@@ -9,11 +9,14 @@
         }
 
         /* 구체적인 구조를 타고 들어가는 자손 선택자 */
-        nav ul {
+        nav>ul {
             list-style: none; /* 불릿이나 숫자 번호 없앰*/
         }
         
-        nav ul li {
+        /* nav > ul > li : 정확하게 한 단계씩 내려가야 적용됨 (좁은 범위) */
+        /* nav ul li : 중간에 뭐가 끼어도 상관 없음 (넓은 범위) */
+
+        nav>ul>li {
             display: inline-block;
             padding: 20px;
             margin: 0 20px;
