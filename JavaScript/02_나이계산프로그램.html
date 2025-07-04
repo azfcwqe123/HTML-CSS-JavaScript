@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var curYear = 2025;
+        var birthYear;
+        var age;
+
+        birthYear = prompt("태어난 연도 입력. (YYYY)", "");
+        age = curYear - birthYear + 1;
+        document.write("현재는 " + curYear + "입니다.<br>");
+        document.write(birthYear + "년에 태어난 사람의 나이는 " + age + "세입니다.");
+
+        // 콘솔창에서 typeof 100, typeof "Hello"하면 각각 number(정수, 실수), string이라고 나옴.
+
+        var season = ["봄", "여름", "가을", "겨울"];
+        // 콘솔창에 season 치면 배열의 요소들 나오고, season[1]하면 '여름'이 나옴.
+    </script>
+</body>
+</html>

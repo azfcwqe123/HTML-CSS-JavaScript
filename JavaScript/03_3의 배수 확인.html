@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var n = prompt("숫자 입력");
+
+        // 취소를 누르면 n에는 null이 초기화됨.
+        if(n !== null) {
+            if(n % 3 === 0) alert("3의 배수입니다.");
+            else alert("3의 배수가 아닙니다.");
+        }
+        else alert("입력이 취소됐습니다.");
+        
+        // !=, ==와 !==, ===의 차이는?
+        // 전자는 자료형을 자동으로 변환해서 비교, 후자는 날 것 그대로
+    </script>
+</body>
+</html>
