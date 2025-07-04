@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        // 익명 함수
+        var sum = function(a, b) {
+            return a + b;
+        }
+        document.write("함수 실행 결과: " + sum(10, 20) + "<br>");
+
+        // 즉시 실행 함수
+        (function() {
+            var userName = prompt("이름을 입력하세요.");
+            document.write("당신의 이름은 " + userName + "<br>");
+        }());
+
+        // 매개 변수가 있는 즉시 실행 함수
+        (function(a, b) {
+            sum = a + b;
+        }(100, 200));
+        document.write("함수 실행 결과: " + sum + "<br>");
+
+        document.write("------------화살표 함수------------<br>")
+        // 매개 변수가 없는 화살표 함수
+        const hi = () => "안녕하세요?";
+        document.write(hi() + "<br>");
+
+        // 매개 변수가 1개인 화살표 함수
+        let a = n => {document.write(n + "<br>");}
+        a(10);
+
+        // 매개 변수가 2개인 화살표 함수
+        let getSum = (a, b) => a + b;
+        document.write(getSum(10, 20) + "<br>");
+
+    </script>
+</body>
+</html>
